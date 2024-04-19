@@ -1,23 +1,12 @@
-type MenuProps = {
-    text: string
-}
+import Button from "@/button"
 
-
-const MenuButton = (props: MenuProps) => {
-    return (
-        <button>
-            {props.text}
-        </button>
-    )
-}
 
 export default function Menu() {
     return (
         <div>
-            <MenuButton text="Home" />
-            <MenuButton text="About" />
-            <MenuButton text="Projects" />
-            <MenuButton text="Contact" />
+            <Button text="Home" btnClass={""} />
+            <Button text="Projects" btnClass={""} />
+            <Button text="Contact" btnClass={""} />
         </div>
     )
 }
