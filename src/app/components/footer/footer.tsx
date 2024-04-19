@@ -1,6 +1,7 @@
+import Circles from './circles'
 
 
-export default function Navbar() {
+export default function Footer() {
     return (
         <footer>
             <div>
@@ -12,7 +13,10 @@ export default function Navbar() {
                 <p>Email: anton.belov.al7@gmail.com</p>
             </div>
             <div>
-                
+                <Circles />
+            </div>
+            <div>
+                <p>2024@ All rights reserved | Anton Belov.</p>
             </div>
         </footer>
     )

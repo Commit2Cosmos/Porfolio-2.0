@@ -16,13 +16,13 @@ function Circle(props: CircleProps) {
 
     return (
         <Link href={link_url}>
-            { <Icon /> }
+            { <Icon size='48' /> }
         </Link>
     );
 }
 
 
-function Circles() {
+export default function Circles() {
     return (
         <>
             <Circle Icon={ ImLinkedin2 } link_url='linkedin_url' />
