@@ -1,12 +1,12 @@
-import Button from "@/button"
+import Link from 'next/link'
 
 
 export default function Menu() {
     return (
         <div>
-            <Button text="Home" btnClass={""} />
-            <Button text="Projects" btnClass={""} />
-            <Button text="Contact" btnClass={""} />
+            <Link href="/">Home</Link>
+            <Link href="/projects">Projects</Link>
+            <Link href="/#contact-section">Contact</Link>
         </div>
     )
 }

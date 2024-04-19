@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { ImLinkedin2 } from 'react-icons/im';
 import { AiFillGithub, AiFillMediumCircle } from 'react-icons/ai';
-import { IconType } from 'react-icons'
+import type { IconType } from 'react-icons'
+import paths from 'paths';
 
 
 interface CircleProps {
@@ -25,9 +26,9 @@ function Circle(props: CircleProps) {
 export default function Circles() {
     return (
         <>
-            <Circle Icon={ ImLinkedin2 } link_url='linkedin_url' />
-            <Circle Icon={ AiFillGithub } link_url='github_url' />
-            <Circle Icon={ AiFillMediumCircle } link_url='medium_url' />
+            <Circle Icon={ ImLinkedin2 } link_url={paths.linkedin} />
+            <Circle Icon={ AiFillGithub } link_url={paths.github} />
+            <Circle Icon={ AiFillMediumCircle } link_url={paths.medium} />
         </>
     );
 }
