@@ -9,7 +9,7 @@ export default function LandingMain() {
             <h1>Anton Belov</h1>
             <h3>Physicist by degree, developer by choice</h3>
             <Button text={"Resume"} btnClass={""} />
-            <Link href="/#contact-section">Contact</Link>
+            <Link href="/#contact">Contact</Link>
         </section>
     )
 }
