@@ -4,6 +4,7 @@ import { Montserrat } from 'next/font/google';
 import Navbar from "@/navigation/navbar";
 import Contact from "@/contact/contact"
 import Footer from "@/footer/footer"
+import CustomCursor from '@/cursor'
 
  
 export const inter = Montserrat({ subsets: ['latin'] });
@@ -24,6 +25,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${inter.className} antialiased bg-whitish-bg`}>
+                <CustomCursor />
                 <Navbar />
                 {children}
                 <Contact />
