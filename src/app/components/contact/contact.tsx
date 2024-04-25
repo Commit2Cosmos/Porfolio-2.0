@@ -1,5 +1,4 @@
 import Form from "./form";
-import Button from "@/button";
 
 
 export default function Contact() {
@@ -7,7 +6,7 @@ export default function Contact() {
         <section id="contact">
             <h2>Leave a comment</h2>
             <Form />
-            <Button text={"Share message"} btnClass={""} />
+            <button>Share message</button>
         </section>
     );
 }

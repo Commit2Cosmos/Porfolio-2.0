@@ -9,6 +9,15 @@
     :root {
         /* --custom-blue: theme('colors.slate.50'); */
         font-size: 16px;
+        @apply font-medium tracking-tight;
+    }
+
+    h1 {
+        @apply font-extrabold text-8xl font-sans;
+    }
+
+    h3 {
+        @apply font-light text-3xl font-sans;
     }
 
     /* body {
@@ -30,6 +39,10 @@
 
 @layer utilities {
     .outline-all, .outline-all > * {
-        @apply outline outline-orange-600
+        @apply outline outline-orange-600;
+    }
+
+    .custom-border {
+        @apply border-4 border-black rounded-xl;
     }
 }

@@ -16,7 +16,7 @@ const config: Config = {
                 'inactive-button-grey': '#656565',
             },
             boxShadow: {
-                'menu-shadow': '0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.4)',
+                'menu-shadow': '0.4rem 0.4rem 0 rgba(0, 0, 0, 1)',
             }
         },
     },
