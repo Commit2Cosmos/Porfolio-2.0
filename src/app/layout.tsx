@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import Navbar from "@/navigation/navbar";
 import Contact from "@/contact/contact"
 import Footer from "@/footer/footer"
 
  
-export const inter = Inter({ subsets: ['latin'] });
+export const inter = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
     title: {
@@ -23,7 +23,7 @@ export default function RootLayout({
     }>) {
     return (
         <html lang="en">
-            <body className={`${inter.className} antialiased`}>
+            <body className={`${inter.className} antialiased bg-whitish-bg`}>
                 <Navbar />
                 {children}
                 <Contact />

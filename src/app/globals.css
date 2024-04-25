@@ -1,27 +1,35 @@
+/*! typography, forms */
 @tailwind base;
+/*! buttons, cards, navigation bars */
 @tailwind components;
+/*! single-purpose classes */
 @tailwind utilities;
 
-:root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
+@layer base {
+    :root {
+        /* --custom-blue: theme('colors.slate.50'); */
+        font-size: 16px;
+    }
+
+    /* body {
+
+    } */
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
+@layer components {
+    .navbar-menu-items {
+        text-align: center;
+        vertical-align: middle;
+        width: 7rem;
+        padding: 0.5rem 0rem;
+        margin: 0rem 0.8rem;
+        border-radius: 0.25rem;
     }
 }
 
-/* body {
-    color: rgb(var(--foreground-rgb));
-} */
 
 @layer utilities {
-    .text-balance {
-        text-wrap: balance;
+    .outline-all, .outline-all > * {
+        @apply outline outline-orange-600
     }
 }

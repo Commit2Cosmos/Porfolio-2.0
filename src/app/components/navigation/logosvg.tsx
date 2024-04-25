@@ -6,8 +6,9 @@ export default function LogoSVG() {
         <Image
             src="/ab-logo.svg"
             width={200}
-            height={900}
+            height={200}
             alt="Picture of the logo"
+            className="scale-125"
         />
     )
 }
