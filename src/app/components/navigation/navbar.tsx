@@ -7,7 +7,9 @@ export default function Navbar() {
         <nav className="fixed w-full h-[4.5rem] my-6 px-[10%]
         flex justify-between
         ">
-            <LogoSVG />
+            <div className="scale-125">
+                <LogoSVG />
+            </div>
             <Menu />
         </nav>
     )

@@ -13,12 +13,15 @@ function Stack(props: StackProps) {
     const { text, icon_path, alt } = props;
 
     return (
-        <div>
-            <Image 
+        <div className="h-15 border-2 border-black rounded-3xl py-0.5 pr-3 pl-2
+        flex items-center justify-center gap-1
+        ">
+            <Image
             src={ icon_path }
             alt={alt}
             width={50}
-            height={100}/>
+            height={100}
+            className="p-1"/>
             <p>{ text }</p>
         </div>
     )
@@ -27,14 +30,18 @@ function Stack(props: StackProps) {
 
 export default function Stacks() {
     return (
-        <div>
-            <Stack text={"TypeScript"} icon_path={"/ab-logo.svg"} alt={""} />
-            <Stack text={"Next.js"} icon_path={"/ab-logo.svg"} alt={""} />
-            <Stack text={"Node js"} icon_path={"/ab-logo.svg"} alt={""} />
-            <Stack text={"Git"} icon_path={"/ab-logo.svg"} alt={""} />
-            <Stack text={"PyTorch"} icon_path={"/ab-logo.svg"} alt={""} />
-            <Stack text={"PyTorch"} icon_path={"/ab-logo.svg"} alt={""} />
-            <Stack text={"PyTorch"} icon_path={"/ab-logo.svg"} alt={""} />
+        <div className="my-3
+        flex flex-wrap justify-center gap-4
+        ">
+            <Stack text={"TypeScript"} icon_path={"/typescript-16-svgrepo-com.svg"} alt={""} />
+            <Stack text={"Next.js"} icon_path={"/next-dot-js-svgrepo-com.svg"} alt={""} />
+            <Stack text={"Node.js"} icon_path={"/node-js-svgrepo-com.svg"} alt={""} />
+            <Stack text={"Git"} icon_path={"/git-svgrepo-com.svg"} alt={""} />
+            <Stack text={"PyTorch"} icon_path={"/pytorch-svgrepo-com.svg"} alt={""} />
+            <Stack text={"TensorFlow"} icon_path={"/tensorflow-svgrepo-com.svg"} alt={""} />
+            <Stack text={"Rust"} icon_path={"/rust-svgrepo-com.svg"} alt={""} />
+            <Stack text={"PostgreSQL"} icon_path={"/postgresql-svgrepo-com.svg"} alt={""} />
+            <Stack text={"TailwindCSS"} icon_path={"/tailwindcss-svgrepo-com.svg"} alt={""} />
         </div>
     )
 }

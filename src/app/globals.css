@@ -7,13 +7,16 @@
 
 @layer base {
     :root {
-        /* --custom-blue: theme('colors.slate.50'); */
         font-size: 16px;
         @apply font-medium tracking-tight;
     }
 
     h1 {
         @apply font-extrabold text-8xl font-sans;
+    }
+
+    h2 {
+        @apply font-extrabold text-6xl font-sans;
     }
 
     h3 {
