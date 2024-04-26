@@ -17,6 +17,7 @@ const config: Config = {
             },
             boxShadow: {
                 'menu-shadow': '0.4rem 0.4rem 0 rgba(0, 0, 0, 1)',
+                'form-shadow': '0.2rem 0.2rem 0 rgba(0, 0, 0, 1)',
             }
         },
     },
