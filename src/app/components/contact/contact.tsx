@@ -1,10 +1,9 @@
 import Form from "./form";
-import Image from "next/image"
 
 
 export default function Contact() {
     return (
-        <section 
+        <section
             id="contact"
             className="w-screen h-[120vh] pl-[20%] lg:pl-[38%] pr-[5%]
             flex flex-col justify-center gap-5

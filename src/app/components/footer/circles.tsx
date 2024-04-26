@@ -1,34 +1,29 @@
 import Link from 'next/link';
-import { ImLinkedin2 } from 'react-icons/im';
 import { AiFillGithub, AiFillMediumCircle } from 'react-icons/ai';
-import type { IconType } from 'react-icons'
+import Image from 'next/image';
 import paths from 'paths';
-
-
-interface CircleProps {
-    Icon: IconType,
-    link_url: string
-}
-
-
-function Circle(props: CircleProps) {
-
-    const { Icon, link_url } = props;
-
-    return (
-        <Link href={link_url}>
-            { <Icon size='48' /> }
-        </Link>
-    );
-}
 
 
 export default function Circles() {
     return (
-        <>
-            <Circle Icon={ ImLinkedin2 } link_url={paths.linkedin} />
-            <Circle Icon={ AiFillGithub } link_url={paths.github} />
-            <Circle Icon={ AiFillMediumCircle } link_url={paths.medium} />
-        </>
+        <div className="my-4 h-14
+        flex items-stretch gap-3
+        ">
+            <Link href={paths.github} className='flex items-center justify-center'>
+                <AiFillGithub className='w-full h-full' />
+            </Link>
+            <Link href={paths.medium} className='flex items-center justify-center'>
+                <AiFillMediumCircle className="w-full h-full" />
+            </Link>
+            <Link href={paths.linkedin} className='flex items-center justify-center'>
+                <Image
+                    src="/linkedin-round-svgrepo-com.svg" 
+                    alt={'linkedin logo'}
+                    height="15"
+                    width="15"
+                    className='w-full h-full p-[0.2rem]'
+                />
+            </Link>
+        </div>
     );
 }
