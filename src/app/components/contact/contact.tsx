@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <section
             id="contact"
-            className="w-screen h-[120vh] pl-[20%] lg:pl-[38%] pr-[5%]
+            className="w-screen h-[110vh] pl-[20%] lg:pl-[38%] pr-[5%]
             flex flex-col justify-center gap-5
             "
         >

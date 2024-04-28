@@ -9,6 +9,9 @@
     :root {
         font-size: 16px;
         @apply font-medium tracking-tight;
+
+        --bg-whitish: theme(colors.whitish-bg);
+        --form-grey: theme(colors.form-grey)
     }
 
     h1 {
@@ -52,4 +55,15 @@
     .lighter-border {
         @apply border-2 border-black rounded-xl;
     }
+
+    .fade-border:after {
+        content:""; 
+        position: absolute; 
+        top: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to right, var(--bg-whitish) 0%, var(--form-grey) 50%, var(--bg-whitish) 100%);
+        /* background: red; */
+        height: 1px;  
+      }
 }
