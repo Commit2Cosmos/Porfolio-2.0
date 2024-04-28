@@ -23,7 +23,7 @@ export default function RootLayout({
     }>) {
     return (
         <html lang="en">
-            <body className={`${inter.className} antialiased bg-whitish-bg overflow-x-hidden overflow-visible`}>
+            <body className={`${inter.className} antialiased bg-whitish-bg overflow-x-hidden overflow-visible select-none`}>
                 <Navbar />
                 {children}
                 <Contact />

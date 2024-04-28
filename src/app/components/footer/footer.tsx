@@ -16,7 +16,7 @@ export default function Footer() {
                 <p>Email: <u className="text-orange-xtra">anton.belov.al7@gmail.com</u></p>
             </div>
             <div className='absolute right-[4%] bottom-3 text-sm font-semibold'>
-                <p>2024@ All rights reserved | Anton Belov.</p>
+                <p>2024&copy; All rights reserved | Anton Belov.</p>
             </div>
         </footer>
     )
