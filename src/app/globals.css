@@ -40,12 +40,20 @@
         margin: 0rem 0.8rem;
         border-radius: 0.25rem;
     }
+
+    .chevron-btn {
+        @apply bg-[#ff4343] text-white p-2;
+    }
 }
 
 
 @layer utilities {
     .outline-all, .outline-all > * {
         @apply outline outline-orange-600;
+    }
+
+    #bgVideo {
+        filter: grayscale(100%);
     }
 
     .custom-border {

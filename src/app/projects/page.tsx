@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 import { HiChevronDoubleUp } from 'react-icons/hi';
 import paths from 'paths';
-import MLSection from './components/ml';
-import FrontEndSection from './components/frontend';
 import Link from 'next/link';
+import ProjectsSections from './components/section_template'
 
 
 export const metadata: Metadata = {
@@ -19,11 +18,10 @@ export default function Projects() {
             <section className="outline-all w-full h-full
             flex
             ">
-                <MLSection />
-                <FrontEndSection />
+                <ProjectsSections />
             </section>
             <div className='absolute'>
-                <HiChevronDoubleUp size='55' className='bg-red-400 dark:bg-red-500 text-white p-2' />
+                <HiChevronDoubleUp size='55' className='chevron-btn' />
                 <Link href={paths.other}>
                     Other
                 </Link>
