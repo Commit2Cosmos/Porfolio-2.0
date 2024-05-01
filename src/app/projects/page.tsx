@@ -13,12 +13,16 @@ export const metadata: Metadata = {
 
 export default function Projects() {
     return (
-        <main>
-            <section>
+        <main className="relative
+        w-screen h-screen
+        ">
+            <section className="outline-all w-full h-full
+            flex
+            ">
                 <MLSection />
                 <FrontEndSection />
             </section>
-            <div>
+            <div className='absolute'>
                 <HiChevronDoubleUp size='55' className='bg-red-400 dark:bg-red-500 text-white p-2' />
                 <Link href={paths.other}>
                     Other

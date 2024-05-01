@@ -6,7 +6,7 @@ import paths from "paths";
 
 export default function FrontEndSection() {
     return (
-        <div>
+        <div className="flex-1">
             <Link href={paths.frontend}>
                 Frontend
             </Link>

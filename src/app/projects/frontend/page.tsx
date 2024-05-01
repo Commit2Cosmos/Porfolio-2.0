@@ -1,10 +1,12 @@
-
+import ProjectsLayout from "../children_layout"
 
 
 export default function FrontendPage() {
     return (
-        <div>
-            Frontend Projects Section
-        </div>
+        <ProjectsLayout>
+            <div>
+                Frontend Projects Section
+            </div>
+        </ProjectsLayout>
     )
 }
