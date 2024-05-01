@@ -42,7 +42,7 @@
     }
 
     .chevron-btn {
-        @apply bg-[#ff4343] text-white p-2;
+        @apply bg-[#ff4343] text-white p-2 grayscale;
     }
 }
 
@@ -50,6 +50,11 @@
 @layer utilities {
     .outline-all, .outline-all > * {
         @apply outline outline-orange-600;
+    }
+
+    .center-btn {
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
     #bgVideo {
