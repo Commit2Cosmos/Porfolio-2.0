@@ -41,9 +41,26 @@
         border-radius: 0.25rem;
     }
 
-    .chevron-btn {
-        @apply bg-[#ff4343] text-white p-2 grayscale;
+    .other-btn-text {
+        transition: all 0.5s ease;
+        opacity: 50%;
     }
+
+    .other-btn-text:hover {
+        transform: translateY(-1.5rem);
+        opacity: 100%;
+    }
+
+    .chevron-btn {
+        transition: transform 0.5s ease-in-out;
+        @apply bg-[#ff4343] text-whitish-bg p-2 grayscale;
+    }
+
+    .other-btn-text:hover .chevron-btn {
+        transform: rotate(180deg);
+        @apply grayscale-0;
+    }
+
 }
 
 

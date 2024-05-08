@@ -2,7 +2,7 @@ export default {
     //! Sections
     about: '#about',
     skills: '#skills',
-    contact: '#contact',
+    contact: '/#contact',
     
     //! Pages
     projects: '/projects',

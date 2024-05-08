@@ -8,7 +8,7 @@ export default function Menu() {
     const isActive = true;
 
     return (
-        <div className="custom-border shadow-menu-shadow backdrop-blur
+        <div className="custom-border shadow-menu-shadow backdrop-blur pointer-events-auto
         font-semibold
         flex items-center justify-center
         ">
