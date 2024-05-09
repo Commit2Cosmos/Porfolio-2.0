@@ -26,6 +26,10 @@
         @apply font-light text-3xl font-sans;
     }
 
+    h4 {
+        @apply font-light text-3xl font-sans;
+    }
+
     /* body {
 
     } */
@@ -59,6 +63,10 @@
     .other-btn-text:hover .chevron-btn {
         transform: rotate(180deg);
         @apply grayscale-0;
+    }
+
+    .custom-drop-shadow {
+        @apply drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)];
     }
 
 }
