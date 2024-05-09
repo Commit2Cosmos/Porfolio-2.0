@@ -9,36 +9,64 @@ export default {
         alt: "",
         additional_classes: "group-hover:ts-colour",
     },
-    "ts1": {
+
+    "nextjs": {
         id: uuidv4(),
-        text: "TypeScript",
-        icon_path: "/typescript-svgrepo-com.svg",
+        text: "Next.js",
+        icon_path: "/next-dot-js-svgrepo-com.svg",
         alt: "",
-        additional_classes: "group-hover:ts-colour",
+        additional_classes: "group-hover:next-colour",
     },
-    "ts2": {
+
+    "node": {
         id: uuidv4(),
-        text: "TypeScript",
-        icon_path: "/typescript-svgrepo-com.svg",
+        text: "Node.js",
+        icon_path: "/node-js-svgrepo-com.svg",
         alt: "",
-        additional_classes: "group-hover:ts-colour",
+        additional_classes: "group-hover:node-colour",
     },
-    "ts3": {
+
+    "git": {
         id: uuidv4(),
-        text: "TypeScript",
-        icon_path: "/typescript-svgrepo-com.svg",
+        text: "Git",
+        icon_path: "/git-svgrepo-com.svg",
         alt: "",
-        additional_classes: "group-hover:ts-colour",
+        additional_classes: "group-hover:git-colour",
+    },
+
+    "torch": {
+        id: uuidv4(),
+        text: "PyTorch",
+        icon_path: "/pytorch-svgrepo-com.svg",
+        alt: "",
+        additional_classes: "group-hover:torch-colour",
+    },
+
+    "rust": {
+        id: uuidv4(),
+        text: "Rust",
+        icon_path: "/rust-svgrepo-com.svg",
+        alt: "",
+        additional_classes: "group-hover:rust-colour",
+    },
+
+    "postgresql": {
+        id: uuidv4(),
+        text: "PostgreSQL",
+        icon_path: "/postgresql-svgrepo-com.svg",
+        alt: "",
+        additional_classes: "group-hover:postgresql-colour rounded-none",
+    },
+
+    "tailwind": {
+        id: uuidv4(),
+        text: "TailwindCSS",
+        icon_path: "/tailwindcss-svgrepo-com.svg",
+        alt: "",
+        additional_classes: "group-hover:tailwind-colour",
     },
 }
 
 
-// <Stack text={"TypeScript"} icon_path={"/typescript-svgrepo-com.svg"} alt={""} additional_classes={"group-hover:ts-colour"} />
-//             <Stack text={"Next.js"} icon_path={"/next-dot-js-svgrepo-com.svg"} alt={""} additional_classes={"group-hover:next-colour"} />
-//             <Stack text={"Node.js"} icon_path={"/node-js-svgrepo-com.svg"} alt={""} additional_classes={"group-hover:node-colour"} />
-//             <Stack text={"Git"} icon_path={"/git-svgrepo-com.svg"} alt={""} additional_classes={"group-hover:git-colour"} />
-//             <Stack text={"PyTorch"} icon_path={"/pytorch-svgrepo-com.svg"} alt={""} additional_classes={"group-hover:torch-colour"} />
-//             <Stack text={"TensorFlow"} icon_path={"/tensorflow-svgrepo-com.svg"} alt={""} additional_classes={"group-hover:tensor-colour"} />
-//             <Stack text={"Rust"} icon_path={"/rust-svgrepo-com.svg"} alt={""} additional_classes={"group-hover:rust-colour"} />
-//             <Stack text={"PostgreSQL"} icon_path={"/postgresql-svgrepo-com.svg"} alt={""} additional_classes="rounded-none group-hover:postgresql-colour" />
-//             <Stack text={"TailwindCSS"} icon_path={"/tailwindcss-svgrepo-com.svg"} alt={""} additional_classes={"group-hover:tailwind-colour"} />
+// <Stack text={"TailwindCSS"} icon_path={"/tailwindcss-svgrepo-com.svg"} alt={""} additional_classes={"group-hover:tailwind-colour"} />
+// <Stack text={"TensorFlow"} icon_path={"/tensorflow-svgrepo-com.svg"} alt={""} additional_classes={"group-hover:tensor-colour"} />

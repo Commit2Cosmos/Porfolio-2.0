@@ -12,7 +12,7 @@ function Input(props: InputProps) {
         <label className="grow">
             <p className="text-sm text-form-grey">{ name }</p>
             <input type="text" name={name.toLowerCase()} placeholder={placeholder}
-            className="lighter-border shadow-form-shadow h-16 w-full my-3 px-4"/>
+            className="lighter-border shadow-form-shadow h-16 w-full my-3 px-4 pressed-input"/>
         </label>
     );
 }
@@ -33,7 +33,7 @@ export default function Form() {
                 <p className="text-sm text-form-grey">Message</p>
                 <textarea 
                 name="message"
-                className="lighter-border shadow-form-shadow h-32 w-full my-3 px-4 py-3"
+                className="lighter-border shadow-form-shadow h-32 w-full my-3 px-4 py-3 pressed-input"
                 placeholder="Hey, I love your work..."
                 ></textarea>
             </label>

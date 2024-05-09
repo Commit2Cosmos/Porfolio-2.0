@@ -30,6 +30,10 @@
         @apply font-light text-3xl font-sans;
     }
 
+    input, textarea {
+        outline: none;
+    }
+
     /* body {
 
     } */
@@ -145,6 +149,10 @@
 
     .pressed-btn {
         @apply hover:shadow-none hover:translate-x-[0.4rem] hover:translate-y-[0.4rem] duration-200;
+    }
+
+    .pressed-input {
+        @apply focus:shadow-none focus:translate-x-[0.2rem] focus:translate-y-[0.2rem] duration-200;
     }
 
     .ts-colour {
