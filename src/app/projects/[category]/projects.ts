@@ -31,19 +31,9 @@ export default {
         imagesrc: "/projects/torchh.png",
     },
 
-    "montecarlo": {
-        id: uuidv4(),
-        category: "ml",
-        name: 'Monte Carlo Simulation',
-        description: 'Simulation of particles in a box with Python',
-        complete: true,
-        url: new URL('https://github.com/Commit2Cosmos/MonteCarloSimulation'),
-        imagesrc: "/projects/montecarlo.png",
-    },
-
     "sorting_vis": {
         id: uuidv4(),
-        category: "ml",
+        category: "frontend",
         name: 'Sorting Visualizer',
         description: 'A visualization tools for popular sorting algorithms',
         complete: false,
@@ -51,9 +41,19 @@ export default {
         imagesrc: "/projects/visualizer.png",
     },
 
+    "montecarlo": {
+        id: uuidv4(),
+        category: "other",
+        name: 'Monte Carlo Simulation',
+        description: 'Simulation of particles in a box with Python',
+        complete: true,
+        url: new URL('https://github.com/Commit2Cosmos/MonteCarloSimulation'),
+        imagesrc: "/projects/montecarlo.png",
+    },
+
     "car": {
         id: uuidv4(),
-        category: "ml",
+        category: "other",
         name: 'Self-Driving Car',
         description: 'Teach a car how to drive using CNNs!',
         complete: false,
@@ -63,7 +63,7 @@ export default {
 
     "solar": {
         id: uuidv4(),
-        category: "ml",
+        category: "other",
         name: 'Solar System Simulation',
         description: 'Simulating the Solar System using various numerical methods',
         complete: true,
@@ -73,7 +73,7 @@ export default {
 
     "animations": {
         id: uuidv4(),
-        category: "ml",
+        category: "other",
         name: 'Animations with JavaScript',
         description: 'JavaScript animations using canvas',
         complete: true,

@@ -19,7 +19,7 @@ interface ProjectType {
 function Project({ params }: { params: {project: ProjectType} }) {
     const project = params.project
     return (
-        <li key={project.id} className="h-[22rem] relative p-5 border
+        <li key={project.id} className="h-96 relative p-5 border
         flex flex-wrap justify-center items-center content-center gap-2
         group
         ">
@@ -30,8 +30,8 @@ function Project({ params }: { params: {project: ProjectType} }) {
                 objectFit="cover"
                 className="-z-10"
             />
-            <div className="absolute w-full h-full bg-black opacity-0 group-hover:opacity-60 duration-200"></div>
-            <div className="z-10 text-whitish-bg duration-200 h-full w-full group-hover:opacity-100 opacity-0
+            <div className="absolute w-full h-full bg-black opacity-0 group-hover:opacity-60 duration-300"></div>
+            <div className="z-10 text-whitish-bg duration-300 h-full w-full group-hover:opacity-100 opacity-0
             flex flex-col items-center justify-center gap-2
             ">
                 <h4 className="text-center font-medium custom-drop-shadow">{project.name}</h4>

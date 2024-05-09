@@ -77,6 +77,13 @@
         @apply outline outline-orange-600;
     }
 
+    .center-anything {
+        position: absolute;
+        top: 50%;  
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+
     .center-btn {
         left: 50%;
         transform: translate(-50%, 0);
