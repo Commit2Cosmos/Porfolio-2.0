@@ -33,7 +33,7 @@ export default function SectionTemplate({ vid_name, section_path, title }: Secti
                     <source src={`${vid_name}.mp4`} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <h2 className="absolute bottom-[10%] center-btn text-center opacity-0 text-whitish-bg group-hover:opacity-100 duration-300 custom-drop-shadow pointer-events-none">{title}</h2>
+                <h2 className="absolute bottom-[10%] center-btn text-center opacity-0 text-gray-300 group-hover:opacity-100 duration-300 custom-drop-shadow pointer-events-none burn">{title}</h2>
             </Link>
         </div>
     )
