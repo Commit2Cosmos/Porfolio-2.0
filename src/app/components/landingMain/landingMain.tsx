@@ -13,9 +13,11 @@ export default function LandingMain() {
             <div className='font-bold text-lg my-8
             flex gap-6
             '>
-                <button className="px-6 py-4 landing-btn custom-border shadow-menu-shadow bg-orange-xtra 
+                <Link href="/Anton_Belov_CV.pdf" download className="px-6 py-4 landing-btn custom-border shadow-menu-shadow bg-orange-xtra 
                 pressed-btn
-                ">Resume</button>
+                ">
+                    Resume
+                </Link>
                 <Link href="/#contact" className="px-6 py-4 landing-btn custom-border shadow-menu-shadow 
                 pressed-btn
                 ">Contact</Link>
