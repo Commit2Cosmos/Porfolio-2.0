@@ -42,8 +42,8 @@ function SectionTemplate({ vid_name, section_path }: SectionTemplateProps) {
 export default function ProjectsSections() {
     return (
         <>
-            <SectionTemplate vid_name={"wallpaper"} section_path={paths.ml} />
-            <SectionTemplate vid_name={"wallpaper_2"} section_path={paths.frontend} />
+            <SectionTemplate vid_name={"wallpapers/wallpaper"} section_path={paths.ml} />
+            <SectionTemplate vid_name={"wallpapers/wallpaper_2"} section_path={paths.frontend} />
         </>
     )
 }
