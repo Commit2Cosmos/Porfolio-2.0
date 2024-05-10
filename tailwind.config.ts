@@ -12,9 +12,11 @@ const config: Config = {
             colors: {
                 'redish-xtra': '#dc4040',
                 'orange-xtra': '#ef6b32',
-                'whitish-bg': '#fbfbfb',
+                'primary': '#fbfbfb',
                 'form-grey': '#757575',
                 'inactive-button-grey': '#656565',
+
+                //* dark mode
             },
             boxShadow: {
                 'menu-shadow': '0.4rem 0.4rem 0 rgba(0, 0, 0, 1)',

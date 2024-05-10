@@ -8,7 +8,7 @@ export default function LogoSVG() {
             width={100}
             height={200}
             alt="Picture of the logo"
-            className="w-full h-full"
+            className="w-full h-full dark:whitish-colour"
         />
     )
 }

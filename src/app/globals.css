@@ -10,7 +10,7 @@
         font-size: 16px;
         @apply font-medium tracking-tight;
 
-        --bg-whitish: theme(colors.whitish-bg);
+        --primary: theme(colors.primary);
         --form-grey: theme(colors.form-grey)
     }
 
@@ -61,7 +61,8 @@
 
     .chevron-btn {
         transition: transform 0.5s ease-in-out;
-        @apply bg-[#ff4343] text-whitish-bg p-2 grayscale;
+        color: var(--primary);
+        @apply bg-[#ff4343] p-2 grayscale;
     }
 
     .other-btn-text:hover .chevron-btn {
@@ -79,7 +80,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: radial-gradient(circle at center, transparent 20%, black 70%);
+        background: radial-gradient(ellipse at center, transparent 20%, #121212 70%);
     }
 
     .burn {
@@ -135,11 +136,11 @@
     }
 
     .custom-border {
-        @apply border-4 border-black rounded-xl;
+        @apply border-4 border-black dark:border-white rounded-xl;
     }
     
     .lighter-border {
-        @apply border-2 border-black rounded-xl;
+        @apply border-2 border-black dark:border-white rounded-xl;
     }
 
     .fade-border:after {
@@ -148,9 +149,12 @@
         top: 0;
         left: 0;
         right: 0;
-        background: linear-gradient(to right, var(--bg-whitish) 0%, var(--form-grey) 50%, var(--bg-whitish) 100%);
-        /* background: red; */
+        background: linear-gradient(to right, var(--primary) 0%, var(--form-grey) 50%, var(--primary) 100%);
         height: 1px;  
+    }
+
+    .fade-border-dark:after {
+        background: linear-gradient(to right, black 0%, var(--form-grey) 50%, black 100%);
     }
 
     .pressed-btn {
@@ -202,5 +206,9 @@
     /* #15b4c1 */
     .tailwind-colour {
         filter: invert(68%) sepia(21%) saturate(6023%) hue-rotate(139deg) brightness(90%) contrast(84%);
+    }
+
+    .whitish-colour {
+        filter: invert(100%) sepia(88%) saturate(0%) hue-rotate(64deg) brightness(109%) contrast(97%);
     }
 }

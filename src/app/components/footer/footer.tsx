@@ -3,7 +3,7 @@ import Circles from './circles'
 
 export default function Footer() {
     return (
-        <footer className="h-[40vh] fade-border px-[4%] relative pt-10
+        <footer className="h-[40vh] fade-border dark:fade-border-dark px-[4%] relative pt-10
         flex justify-between items-start
         ">
             <div className="flex flex-col">

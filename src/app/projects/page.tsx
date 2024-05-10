@@ -25,7 +25,7 @@ export default function Projects() {
                     <div className='other-btn-text'>
                         <HiChevronDoubleUp size='55' className='chevron-btn' />
                         <div className='text-center absolute center-btn whitespace-nowrap'>
-                            <p className='text-whitish-bg'>Click to see other projects!</p>
+                            <p className='text-primary'>Click to see other projects!</p>
                         </div>
                     </div>
                 </Link>

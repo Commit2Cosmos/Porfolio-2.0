@@ -31,7 +31,7 @@ function Project({ params }: { params: {project: ProjectType} }) {
                 style={{objectFit:"cover"}}
             />
             <div className="absolute w-full h-full bg-black opacity-0 group-hover:opacity-60 duration-300"></div>
-            <div className="z-10 text-whitish-bg duration-300 h-full w-full group-hover:opacity-100 opacity-0
+            <div className="z-10 text-primary duration-300 h-full w-full group-hover:opacity-100 opacity-0
             flex flex-col items-center justify-center gap-2
             ">
                 <h4 className="text-center font-medium custom-drop-shadow">{project.name}</h4>
