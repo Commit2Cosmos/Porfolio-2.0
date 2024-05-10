@@ -1,9 +1,9 @@
 import Link from 'next/link'
-
+import BGImages from './bgImages'
 
 export default function LandingMain() {
     return (
-        <section className="w-screen h-screen 
+        <section className="w-screen min-h-screen 
         px-[10%] pb-20
         flex flex-col justify-center
         ">
@@ -22,6 +22,7 @@ export default function LandingMain() {
                 pressed-btn
                 ">Contact</Link>
             </div>
+            <BGImages />
         </section>
     )
 }

@@ -11,6 +11,9 @@ export const metadata: Metadata = {
         default: "Anton's Portfolio",
       },
     description: "A portfolio website, built with NextJS and TailwindCSS",
+    icons: {
+        icon: '/ab-logo.svg',
+    },
 };
 
 export default function RootLayout({

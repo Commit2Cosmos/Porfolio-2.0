@@ -3,7 +3,7 @@ import { HiChevronDoubleUp } from 'react-icons/hi';
 import paths from 'paths';
 import Link from 'next/link';
 import Navbar from "@/navigation/navbar";
-import SectionTemplate from './components/section_template';
+import SectionTemplate from './section_template';
 
 
 export const metadata: Metadata = {
