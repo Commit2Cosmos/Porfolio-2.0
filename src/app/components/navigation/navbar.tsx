@@ -1,5 +1,6 @@
 import LogoSVG from "./logosvg"
 import Menu from "./menu"
+import ThemeSwitch from "./theme_switch"
 
 
 export default function Navbar() {
@@ -10,7 +11,10 @@ export default function Navbar() {
             <div className="scale-125 z-20">
                 <LogoSVG />
             </div>
-            <Menu />
+            <div className="flex items-stretch gap-10">
+                <ThemeSwitch />
+                <Menu />
+            </div>
         </nav>
     )
 }

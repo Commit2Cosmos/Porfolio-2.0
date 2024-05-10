@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Montserrat } from 'next/font/google';
+import { Providers } from './providers'
 
  
 export const inter = Montserrat({ subsets: ['latin'] });
@@ -22,9 +23,11 @@ export default function RootLayout({
     children: React.ReactNode;
     }>) {
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
             <body className={`${inter.className} antialiased bg-whitish-bg overflow-x-hidden overflow-visible select-none`}>
-                {children}
+                <Providers>
+                    {children}
+                </Providers>
             </body>
         </html>
     );
