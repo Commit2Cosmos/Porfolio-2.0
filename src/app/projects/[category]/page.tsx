@@ -12,14 +12,14 @@ interface ProjectType {
     readonly description: string;
     readonly imagesrc: string;
     readonly complete: boolean;
-    readonly url: URL;
+    readonly url: string;
 }
 
 
 function Project({ params }: { params: {project: ProjectType} }) {
     const project = params.project
     return (
-        <li key={project.id} className="h-96 relative p-5 border
+        <li className="h-96 p-5 border relative
         flex flex-wrap justify-center items-center content-center gap-2
         group
         ">
@@ -27,8 +27,8 @@ function Project({ params }: { params: {project: ProjectType} }) {
                 src={project.imagesrc}
                 fill={true}
                 alt={project.description}
-                objectFit="cover"
                 className="-z-10"
+                style={{objectFit:"cover"}}
             />
             <div className="absolute w-full h-full bg-black opacity-0 group-hover:opacity-60 duration-300"></div>
             <div className="z-10 text-whitish-bg duration-300 h-full w-full group-hover:opacity-100 opacity-0
@@ -57,7 +57,7 @@ export default function Page({ params }: { params: {category: string}}) {
                 <ul className="w-10/12 my-32
                 grid grid-cols-3 gap-6">
                     {selectedProjects.map(project => (
-                        <Project params={{project}} />
+                        <Project key={project.id} params={{project}} />
                     ))}
                 </ul>
             </main>

@@ -7,7 +7,7 @@ export default {
         name: 'CapsNet for Morphology Evolution Prediction',
         description: 'Train a capsule based neural network to classify galaxies!',
         complete: true,
-        url: new URL('https://github.com/Commit2Cosmos/GalaxyZoo-CapsNet'),
+        url: 'https://github.com/Commit2Cosmos/GalaxyZoo-CapsNet',
         imagesrc: "/projects/capsnet2.png",
     },
 
@@ -17,7 +17,7 @@ export default {
         name: 'DeepCaps: Deeper Capsule Networks',
         description: 'Construct and compare deeper CapsNets on various classification tasks!',
         complete: true,
-        url: new URL('https://github.com/Commit2Cosmos/DeepCaps_Pytorch'),
+        url: 'https://github.com/Commit2Cosmos/DeepCaps_Pytorch',
         imagesrc: "/projects/deepcaps.png",
     },
 
@@ -27,7 +27,7 @@ export default {
         name: 'Beginner PyTorch Networks',
         description: 'Implementing basic neural networks from scratch!',
         complete: true,
-        url: new URL('https://github.com/Commit2Cosmos/Pytorch_Small_Projects'),
+        url: 'https://github.com/Commit2Cosmos/Pytorch_Small_Projects',
         imagesrc: "/projects/torchh.png",
     },
 
@@ -37,7 +37,7 @@ export default {
         name: 'Sorting Visualizer',
         description: 'A visualization tools for popular sorting algorithms',
         complete: false,
-        url: new URL('https://github.com/Commit2Cosmos/Sorting-Visualizer'),
+        url: 'https://github.com/Commit2Cosmos/Sorting-Visualizer',
         imagesrc: "/projects/visualizer.png",
     },
 
@@ -47,7 +47,7 @@ export default {
         name: 'Monte Carlo Simulation',
         description: 'Simulation of particles in a box with Python',
         complete: true,
-        url: new URL('https://github.com/Commit2Cosmos/MonteCarloSimulation'),
+        url: 'https://github.com/Commit2Cosmos/MonteCarloSimulation',
         imagesrc: "/projects/montecarlo.png",
     },
 
@@ -57,7 +57,7 @@ export default {
         name: 'Self-Driving Car',
         description: 'Teach a car how to drive using CNNs!',
         complete: false,
-        url: new URL('https://github.com/Commit2Cosmos/Car'),
+        url: 'https://github.com/Commit2Cosmos/Car',
         imagesrc: "/projects/car.png",
     },
 
@@ -67,7 +67,7 @@ export default {
         name: 'Solar System Simulation',
         description: 'Simulating the Solar System using various numerical methods',
         complete: true,
-        url: new URL('https://github.com/Commit2Cosmos/SolarSystemSimulation'),
+        url: 'https://github.com/Commit2Cosmos/SolarSystemSimulation',
         imagesrc: "/projects/solarsystem.png",
     },
 
@@ -77,7 +77,7 @@ export default {
         name: 'Animations with JavaScript',
         description: 'JavaScript animations using canvas',
         complete: true,
-        url: new URL('https://github.com/Commit2Cosmos/JSProjects'),
+        url: 'https://github.com/Commit2Cosmos/JSProjects',
         imagesrc: "/projects/js.png",
     }
 }
