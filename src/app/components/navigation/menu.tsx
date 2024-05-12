@@ -1,11 +1,13 @@
+"use client"
+
 import Link from 'next/link'
 import paths from 'paths'
+import { usePathname } from 'next/navigation'
 
 
 export default function Menu() {
 
-    // TODO: replace with state
-    const isActive = true;
+    const pathname = usePathname()
 
     return (
         <div className="custom-border shadow-menu-shadow backdrop-blur pointer-events-auto
@@ -13,8 +15,11 @@ export default function Menu() {
         flex items-center justify-center
         ">
             <Link className={`navbar-menu-items
-            ${isActive ? 'bg-black text-white' : ''}`} href="/">Home</Link>
-            <Link className="navbar-menu-items" href={paths.projects}>Projects</Link>
+            ${pathname === '/' ? 'bg-black text-white dark:bg-white dark:text-black' : ''}`}
+            href="/">Home</Link>
+            <Link className={`navbar-menu-items
+            ${pathname != '/' ? 'bg-black text-white dark:bg-white dark:text-black' : ''}`}
+            href={paths.projects}>Projects</Link>
             <Link className="navbar-menu-items" href={paths.contact}>Contact</Link>
         </div>
     )
