@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function() {
+export default function BGImages() {
     return (
         <>
             <div className='absolute -z-10 bottom-0 right-[40%] dark:whitish-colour'>

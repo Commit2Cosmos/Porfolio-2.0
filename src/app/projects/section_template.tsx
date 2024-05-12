@@ -23,7 +23,7 @@ export default function SectionTemplate({ vid_name, section_path, title }: Secti
             video.pause();
             video.style.filter = "grayscale(100%)"
         });
-    }, []);
+    }, [vid_name]);
 
 
     return (

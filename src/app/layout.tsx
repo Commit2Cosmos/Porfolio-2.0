@@ -4,7 +4,7 @@ import { Montserrat } from 'next/font/google';
 import { Providers } from './providers'
 
  
-export const inter = Montserrat({ subsets: ['latin'] });
+const montserrat = Montserrat({ subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
     title: {
@@ -23,8 +23,8 @@ export default function RootLayout({
     children: React.ReactNode;
     }>) {
     return (
-        <html lang="en" suppressHydrationWarning>
-            <body className={`${inter.className} antialiased bg-light-primary dark:bg-dark-primary overflow-x-hidden overflow-visible select-none`}>
+        <html lang="en" suppressHydrationWarning className={montserrat.className}>
+            <body className={`antialiased bg-light-primary dark:bg-dark-primary overflow-x-hidden overflow-visible select-none`}>
                 <Providers>
                     {children}
                 </Providers>
