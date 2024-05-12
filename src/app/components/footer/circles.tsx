@@ -21,7 +21,7 @@ export default function Circles() {
                     alt={'linkedin logo'}
                     height="15"
                     width="15"
-                    className='w-full h-full p-[0.2rem]'
+                    className='w-full h-full p-[0.2rem] dark:white-colour'
                 />
             </Link>
         </div>

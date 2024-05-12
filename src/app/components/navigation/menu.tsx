@@ -10,7 +10,7 @@ export default function Menu() {
     const pathname = usePathname()
 
     return (
-        <div className="custom-border shadow-menu-shadow backdrop-blur pointer-events-auto
+        <div className="custom-border shadow-menu-shadow dark:shadow-none backdrop-blur pointer-events-auto
         font-semibold
         flex items-center justify-center
         ">

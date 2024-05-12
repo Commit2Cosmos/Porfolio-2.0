@@ -16,7 +16,7 @@ function Stack({ params }: { params: {project: StackProps} }) {
     const { text, icon_path, alt, additional_classes } = params.project;
 
     return (
-        <div className={`h-15 border-2 border-black rounded-3xl py-0.5 pr-3 pl-1 group
+        <div className={`h-15 border-2 border-black dark:border-white rounded-3xl py-0.5 pr-3 pl-1 group
         flex items-center justify-center gap-1
         `}>
             <Image
@@ -24,7 +24,7 @@ function Stack({ params }: { params: {project: StackProps} }) {
             alt={alt}
             width={50}
             height={100}
-            className={`p-2 rounded-full ${additional_classes} duration-200`}/>
+            className={`p-2 rounded-full ${additional_classes} duration-100 dark:white-colour`}/>
             <p>{ text }</p>
         </div>
     )

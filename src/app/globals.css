@@ -143,6 +143,11 @@
         @apply border-2 border-black dark:border-white rounded-xl;
     }
 
+    /* active:button-active */
+    /* .button-active {
+        box-shadow: inset 4px 4px 4px #7e808a, inset -2px -2px 4px white;
+    } */
+
     .fade-border:after {
         content:""; 
         position: absolute; 
@@ -158,11 +163,12 @@
     }
 
     .pressed-btn {
-        @apply hover:shadow-none hover:translate-x-[0.4rem] hover:translate-y-[0.4rem] duration-200;
+        @apply hover:shadow-none hover:translate-x-[0.4rem] hover:translate-y-[0.4rem] dark:hover:translate-x-0 dark:hover:translate-y-0 duration-200;
     }
 
     .pressed-input {
         @apply focus:shadow-none focus:translate-x-[0.2rem] focus:translate-y-[0.2rem] duration-200;
+        @apply dark:duration-0 dark:shadow-none dark:focus:translate-x-0 dark:focus:translate-y-0;
     }
 
     .ts-colour {
@@ -210,5 +216,9 @@
 
     .whitish-colour {
         filter: invert(100%) sepia(88%) saturate(0%) hue-rotate(64deg) brightness(109%) contrast(97%);
+    }
+
+    .white-colour {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(162deg) brightness(103%) contrast(105%);
     }
 }

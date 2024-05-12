@@ -11,7 +11,7 @@ export default function Contact() {
         >
             <h2>Leave a comment</h2>
             <Form />
-            <div className="self-end border-4 border-inactive-button-grey rounded-xl shadow-menu-shadow shadow-inactive-button-grey h-16 px-4
+            <div className="self-end border-4 border-inactive-button-grey rounded-xl shadow-menu-shadow shadow-inactive-button-grey dark:shadow-none h-16 px-4
             pressed-btn
             flex justify-center items-center gap-1
             ">
