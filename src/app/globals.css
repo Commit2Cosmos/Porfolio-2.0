@@ -159,7 +159,7 @@
     }
 
     .pressed-btn {
-        @apply hover:shadow-none hover:translate-x-[0.4rem] hover:translate-y-[0.4rem] dark:hover:translate-x-0 dark:hover:translate-y-0 duration-200;
+        @apply hover:shadow-none duration-200 hover:translate-x-[0.4rem] hover:translate-y-[0.4rem] dark:hover:translate-x-0 dark:hover:translate-y-0 dark:duration-0;
     }
 
     .pressed-input {
