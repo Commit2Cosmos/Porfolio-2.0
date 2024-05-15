@@ -1,5 +1,5 @@
-import LogoSVG from "@/navigation/logosvg"
 import Stacks from "./stacks"
+import Image from "next/image"
 
 
 export default function About() {
@@ -7,9 +7,14 @@ export default function About() {
         <section className="w-screen h-[120vh]
         flex justify-center
         ">
-            <div className="pl-[7%] py-[13%]
+            <div className="pl-[7%] py-[13%] relative
             ">
-                <LogoSVG />
+                <Image src="/uni_photo_cutout.png"
+                alt={"anton photo"}
+                width={450}
+                height={1}
+                className="-z-20 img-filter rounded-4xl"
+                />
             </div>
             <div className="basis-7/12 pl-[3%] pr-[8%] grow
             flex flex-col items-start justify-center gap-5">
