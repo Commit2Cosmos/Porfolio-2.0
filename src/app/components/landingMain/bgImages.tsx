@@ -11,7 +11,7 @@ export default function BGImages() {
                 height={1}
                 />
             </div>
-            <div className='absolute -z-20 bottom-[5%] right-[5%] invisible dark:visible'>
+            <div className='absolute -z-20 bottom-[5%] right-[5%] invisible dark:visible 2xl:scale-125'>
                 <Image
                 src={"/night-sky.jpg"}
                 alt='galaxy image'
