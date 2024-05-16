@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-export default {
+const projects = {
     "capsnet": {
         id: uuidv4(),
         category: "ml",
@@ -81,3 +81,5 @@ export default {
         imagesrc: "/projects/js.png",
     }
 }
+
+export default projects;

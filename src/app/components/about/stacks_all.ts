@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 
 
-export default {
+const stacks = {
     "ts": {
         id: uuidv4(),
         text: "TypeScript",
@@ -67,6 +67,6 @@ export default {
     },
 }
 
+export default stacks;
 
-// <Stack text={"TailwindCSS"} icon_path={"/tailwindcss-svgrepo-com.svg"} alt={""} additional_classes={"group-hover:tailwind-colour"} />
 // <Stack text={"TensorFlow"} icon_path={"/tensorflow-svgrepo-com.svg"} alt={""} additional_classes={"group-hover:tensor-colour"} />

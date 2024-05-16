@@ -1,4 +1,4 @@
-export default {
+const paths = {
     //! Sections
     about: '#about',
     skills: '#skills',
@@ -15,3 +15,5 @@ export default {
     github: 'https://github.com/Commit2Cosmos',
     medium: 'https://medium.com/@anton.belov.al7',
 }
+
+export default paths;
