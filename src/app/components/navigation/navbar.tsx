@@ -1,6 +1,6 @@
-import LogoSVG from "./logosvg"
 import Menu from "./menu"
 import ThemeSwitch from "./theme_switch"
+import Image from "next/image"
 
 
 export default function Navbar() {
@@ -9,7 +9,13 @@ export default function Navbar() {
         flex justify-between
         ">
             <div className="scale-125 z-20">
-                <LogoSVG />
+                <Image
+                    src="/ab-logo.svg"
+                    width={100}
+                    height={200}
+                    alt="Picture of the logo"
+                    className="w-full h-full dark:whitish-colour"
+                />
             </div>
             <div className="flex items-stretch gap-10">
                 <ThemeSwitch />
