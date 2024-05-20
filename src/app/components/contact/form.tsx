@@ -26,7 +26,7 @@ function SubmitButton() {
 type FormValues = {
     name: string,
     email: string,
-    phone?: string,
+    phone: string,
     message: string,
 }
 
@@ -71,7 +71,7 @@ export default function Form() {
                 <div className="grow">
                     <p className="text-sm text-form-grey">Name</p>
                     <input 
-                        placeholder={"Anton Belov"}
+                        placeholder={"Full Name"}
                         className="lighter-border shadow-form-shadow h-16 w-full my-3 px-4 pressed-input"
                         {...register("name", {required: "This is a required field.", minLength: {value: 4, message: 'Min length is 4.'}})}
                     />
@@ -79,9 +79,9 @@ export default function Form() {
                 <div className="grow">
                     <p className="text-sm text-form-grey">Email</p>
                     <input 
-                        placeholder={"anton.belov.al7@gmail.com"}
+                        placeholder={"your_email@gmail.com"}
                         className="lighter-border shadow-form-shadow h-16 w-full my-3 px-4 pressed-input"
-                        {...register("email", {required: "This is a required field.", minLength: {value: 11, message: 'Min length is 11.'}, maxLength: {value: 13, message: 'Max length is 13.'}})}
+                        {...register("email", {required: "This is a required field.", minLength: {value: 4, message: 'Min length is 4.'}})}
                     />
                 </div>
                 <p className="text-red-500 mx-1">{errors.name?.message}</p>
@@ -90,9 +90,9 @@ export default function Form() {
             <div>
                 <p className="text-sm text-form-grey">Phone</p>
                 <input
-                    placeholder={"07999874226"}
+                    placeholder={"+440123456789"}
                     className="lighter-border shadow-form-shadow h-16 w-full my-3 px-4 pressed-input"
-                    {...register("phone", {minLength: {value: 4, message: 'Min length is 4.'}})}
+                    {...register("phone", {required: "This is a required field.", minLength: {value: 11, message: 'Min length is 11.'}, maxLength: {value: 13, message: 'Max length is 13.'}})}
                 />
             </div>
             <div>
@@ -100,7 +100,7 @@ export default function Form() {
                 <textarea 
                 className="lighter-border shadow-form-shadow h-32 w-full my-3 px-4 py-3 pressed-input"
                 placeholder="Hey, I love your work..."
-                {...register("message", {required: "This is a required field.", minLength: {value: 4, message: 'Min length is 4.'}})}
+                {...register("message", {required: "This is a required field.", minLength: {value: 1, message: 'Min length is 1.'}})}
                 />
                 <p className="text-red-500 mx-1">{errors.message?.message}</p>
             </div>
