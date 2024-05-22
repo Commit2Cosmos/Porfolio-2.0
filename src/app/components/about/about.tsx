@@ -4,16 +4,14 @@ import Image from "next/image"
 
 export default function About() {
     return (
-        <section className="w-screen h-[120vh]
-        flex justify-center
-        ">
+        <section className="section-template">
             <div className="pl-[7%] py-[13%] relative
             ">
                 <Image src="/uni_photo_cutout.png"
                 alt={"anton photo"}
                 width={450}
                 height={1}
-                className="-z-20 img-filter rounded-4xl"
+                className="-z-20 rounded-4xl"
                 />
             </div>
             <div className="basis-7/12 pl-[3%] pr-[8%] grow

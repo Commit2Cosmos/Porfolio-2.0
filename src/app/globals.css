@@ -40,6 +40,11 @@
 }
 
 @layer components {
+
+    .section-template {
+        @apply w-screen h-[120vh] 2xl:h-[100vh] flex justify-center;
+    }
+
     .navbar-menu-items {
         text-align: center;
         vertical-align: middle;
@@ -80,7 +85,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: radial-gradient(ellipse at center, transparent 20%, #121212 70%);
+        background: radial-gradient(ellipse at center, transparent 50%, #121212 70%);
     }
 
     @keyframes animation {

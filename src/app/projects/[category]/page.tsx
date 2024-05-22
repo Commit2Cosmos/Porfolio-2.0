@@ -1,25 +1,15 @@
 import Link from "next/link";
 import ProjectsLayout from "./children_layout"
-import projects from "./projects"
+import projects, {ProjectType} from "./projects"
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
-
-interface ProjectType {
-    readonly category: string;
-    readonly id: string;
-    readonly name: string;
-    readonly description: string;
-    readonly imagesrc: string;
-    readonly complete: boolean;
-    readonly url: string;
-}
 
 
 function Project({ params }: { params: {project: ProjectType} }) {
     const project = params.project
     return (
-        <li className="h-96 p-5 border relative
+        <li className="h-96 p-5 bg-primary border-inactive-button-grey dark:border-primary border-2 relative
         flex flex-wrap justify-center items-center content-center gap-2
         group
         ">
@@ -27,11 +17,11 @@ function Project({ params }: { params: {project: ProjectType} }) {
                 src={project.imagesrc}
                 fill={true}
                 alt={project.description}
-                className="-z-10"
+                className="z-10"
                 style={{objectFit:"cover"}}
             />
-            <div className="absolute w-full h-full bg-black opacity-0 group-hover:opacity-60 duration-300"></div>
-            <div className="z-10 text-primary duration-300 h-full w-full group-hover:opacity-100 opacity-0
+            <div className="z-20 absolute w-full h-full bg-black opacity-0 dark:opacity-20 group-hover:opacity-60 duration-300"></div>
+            <div className="z-20 text-primary duration-300 h-full w-full group-hover:opacity-100 opacity-0
             flex flex-col items-center justify-center gap-2
             ">
                 <h4 className="text-center font-medium custom-drop-shadow">{project.name}</h4>

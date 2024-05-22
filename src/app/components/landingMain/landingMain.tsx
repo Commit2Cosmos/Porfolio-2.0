@@ -3,9 +3,8 @@ import BGImages from './bgImages'
 
 export default function LandingMain() {
     return (
-        <section className="w-screen min-h-screen 
-        px-[10%] pb-20
-        flex flex-col justify-center
+        <section className="section-template h-[100vh]
+        px-[10%] pb-20 flex-col
         ">
             <p>Hi, I am</p>
             <h1 className='my-2'>Anton Belov</h1>
