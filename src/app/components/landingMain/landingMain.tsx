@@ -3,7 +3,7 @@ import BGImages from './bgImages'
 
 export default function LandingMain() {
     return (
-        <section className="section-template h-[100vh]
+        <section className="section-template min-h-[100vh]
         px-[10%] pb-20 flex-col
         ">
             <p>Hi, I am</p>

@@ -81,7 +81,13 @@ export default function Form() {
                     <input 
                         placeholder={"your_email@gmail.com"}
                         className="lighter-border shadow-form-shadow h-16 w-full my-3 px-4 pressed-input"
-                        {...register("email", {required: "This is a required field.", minLength: {value: 4, message: 'Min length is 4.'}})}
+                        {...register("email", {
+                            required: "This is a required field.", 
+                            pattern: {
+                                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                message: 'Invalid email address'
+                            }
+                        })}
                     />
                 </div>
                 <p className="text-red-500 mx-1">{errors.name?.message}</p>
@@ -90,10 +96,19 @@ export default function Form() {
             <div>
                 <p className="text-sm text-form-grey">Phone</p>
                 <input
-                    placeholder={"+440123456789"}
                     className="lighter-border shadow-form-shadow h-16 w-full my-3 px-4 pressed-input"
-                    {...register("phone", {required: "This is a required field.", minLength: {value: 11, message: 'Min length is 11.'}, maxLength: {value: 13, message: 'Max length is 13.'}})}
+                    placeholder="+440123456789"
+                    {...register("phone", {
+                        required: "This is a required field.",
+                        minLength: {value: 11, message: 'Min length is 11.'},
+                        maxLength: {value: 13, message: 'Max length is 13.'},
+                        pattern: {
+                            value: /^[0-9+]*$/,
+                            message: "Only numbers and '+' are allowed."
+                        }
+                    })}
                 />
+                <p className="text-red-500 mx-1">{errors.phone?.message}</p>
             </div>
             <div>
                 <p className="text-sm text-form-grey">Message</p>

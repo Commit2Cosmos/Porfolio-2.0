@@ -23,7 +23,7 @@ function Stack({ params }: { params: {project: StackProps} }) {
             src={ `/stacks/${icon_path}` }
             alt={alt}
             width={50}
-            height={100}
+            height={0}
             className={`p-2 rounded-full ${additional_classes} duration-100 dark:white-colour`}/>
             <p>{ text }</p>
         </div>
