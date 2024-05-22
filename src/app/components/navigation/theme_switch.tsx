@@ -14,11 +14,11 @@ export default function ThemeSwitch() {
 
     if (mounted) {
         if (resolvedTheme === 'dark') {
-            return <FiSun className="h-full w-auto pointer-events-auto hover:cursor-pointer" onClick={() => setTheme('light')} />
+            return <FiSun className="h-full w-fit pointer-events-auto hover:cursor-pointer" onClick={() => setTheme('light')} />
         }
     
         if (resolvedTheme === 'light') {
-            return <FiMoon className="h-full w-auto pointer-events-auto hover:cursor-pointer" onClick={() => setTheme('dark')} />
+            return <FiMoon className="h-full w-fit pointer-events-auto hover:cursor-pointer" onClick={() => setTheme('dark')} />
         }
     }
 }

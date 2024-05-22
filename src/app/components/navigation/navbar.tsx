@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Menu from "./menu"
 import ThemeSwitch from "./theme_switch"
 import Image from "next/image"
@@ -5,19 +6,17 @@ import Image from "next/image"
 
 export default function Navbar() {
     return (
-        <nav className="fixed w-full h-[4.5rem] my-6 px-[10%] z-50 pointer-events-none
-        flex justify-between
-        ">
-            <div className="scale-125 z-20">
+        <nav className="fixed w-full h-[4.5rem] my-6 px-[5%] lg:px-[10%] z-50 pointer-events-none
+        flex justify-end">
+            <Link className="absolute w-20 h-full z-20 left-[10%] top-0 pointer-events-auto" href="/">
                 <Image
                     src="/ab-logo.svg"
-                    width={100}
-                    height={200}
+                    fill={true}
                     alt="Picture of the logo"
-                    className="w-full h-full dark:whitish-colour"
+                    className="w-full h-full dark:whitish-colour scale-125"
                 />
-            </div>
-            <div className="flex items-stretch gap-10">
+            </Link>
+            <div className="h-full w-fit flex gap-10">
                 <ThemeSwitch />
                 <Menu />
             </div>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 []
 
-export default function Projects() {
+export default function ProjectsSection() {
     return (
         <main className="relative w-screen h-screen overflow-hidden">
             <Navbar />

@@ -37,7 +37,7 @@ function Project({ params }: { params: {project: ProjectType} }) {
 }
 
 
-export default function Page({ params }: { params: {category: string}}) {
+export default function ProjectsPage({ params }: { params: {category: string}}) {
     const selectedProjects: ProjectType[] = Object.values(projects).filter(c => c.category == params.category);
     
     return (
@@ -45,7 +45,7 @@ export default function Page({ params }: { params: {category: string}}) {
             <main className="min-h-screen
             flex justify-center">
                 <ul className="w-10/12 my-32
-                grid grid-cols-3 gap-6">
+                grid grid-cols-2 lg:grid-cols-3 gap-6">
                     {selectedProjects.map(project => (
                         <Project key={project.id} params={{project}} />
                     ))}
