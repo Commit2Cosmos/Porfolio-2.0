@@ -29,7 +29,7 @@ export default function SectionTemplate({ vid_name, section_path, title }: Secti
     return (
         <div className="flex-1 relative group">
             <Link href={section_path}>
-                <video id={`${vid_name}`} autoPlay={false} muted loop className="object-cover h-full -z-10 duration-300 grayscale">
+                <video preload="auto" poster="wallpapers/wallpaper_poster.png" id={`${vid_name}`} autoPlay={false} muted loop className="object-cover h-full -z-10 duration-300 grayscale">
                     <source src={`${vid_name}.mp4`} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
