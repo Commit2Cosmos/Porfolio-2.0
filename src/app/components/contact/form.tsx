@@ -5,10 +5,13 @@ import { useForm } from "react-hook-form";
 import { supabase } from "@/../../lib/supabaseClient"
 
 
-function SubmitButton() {
+/**
+ * Renders a submit button component with a custom design and animation.
+ *
+ * @return {JSX.Element} The submit button component.
+ */
+function SubmitButton(): JSX.Element {
     return (
-        // <button className=" " type="submit">Share message</button>
-
         <button className="self-end border-4 border-inactive-button-grey rounded-xl shadow-menu-shadow shadow-inactive-button-grey text-inactive-button-grey dark:shadow-none h-16 px-4
             pressed-btn
             flex justify-center items-center gap-1
@@ -31,7 +34,12 @@ type FormValues = {
 }
 
 
-export default function Form() {
+/**
+ * Renders a form component for user data and feedback.
+ *
+ * @return {JSX.Element} The rendered form component.
+ */
+export default function Form(): JSX.Element {
 
     const { register, handleSubmit, reset, formState, formState: { errors , isSubmitSuccessful } } = useForm<FormValues>({
         defaultValues: {

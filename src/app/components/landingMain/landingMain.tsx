@@ -1,7 +1,13 @@
 import Link from 'next/link'
 import BGImages from './bgImages'
 
-export default function LandingMain() {
+/**
+ * Renders the section of the page first seen on the landing page. It includes the background images and two buttons - one for 
+ * downloading the resume, another for directing the user to the contact section.
+ *
+ * @return {JSX.Element} The JSX element representing the landing main section.
+ */
+export default function LandingMain(): JSX.Element {
     return (
         <section className="section-template min-h-[100vh]
         px-[10%] pb-20 flex-col

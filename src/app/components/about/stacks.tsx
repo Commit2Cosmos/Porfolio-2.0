@@ -11,9 +11,20 @@ interface StackProps {
 }
 
 
-function Stack({ params }: { params: {project: StackProps} }) {
+/**
+ * A template for rendering a stack component with the associated image.
+ *
+ * @param {Object} params - An object containing the project details.
+ * @param {string} params.project.id - The unique identifier of the stack.
+ * @param {string} params.project.text - The name of the stack.
+ * @param {string} params.project.icon_path - The path to the icon image.
+ * @param {string} params.project.alt - The alternative text for the image.
+ * @param {string} params.project.additional_classes - Additional CSS classes for styling.
+ * @return {JSX.Element} The rendered stack component.
+ */
+function Stack({ params }: { params: {stack: StackProps} }): JSX.Element {
 
-    const { text, icon_path, alt, additional_classes } = params.project;
+    const { text, icon_path, alt, additional_classes } = params.stack;
 
     return (
         <div className={`h-15 border-2 border-black dark:border-white rounded-3xl py-0.5 pr-3 pl-1 group
@@ -31,7 +42,12 @@ function Stack({ params }: { params: {project: StackProps} }) {
 }
 
 
-export default function Stacks() {
+/**
+ * Renders a list of stack components.
+ *
+ * @return {JSX.Element} The list of stack components.
+ */
+export default function Stacks(): JSX.Element {
 
     const stacksAll: StackProps[] = Object.values(stacks);
 
@@ -39,8 +55,8 @@ export default function Stacks() {
         <ul className="my-3
         flex flex-wrap justify-center gap-4
         ">
-            {stacksAll.map(project => (
-                <li key={project.id}><Stack params={{project}} /></li>
+            {stacksAll.map(stack => (
+                <li key={stack.id}><Stack params={{stack}} /></li>
             ))}
         </ul>
     )

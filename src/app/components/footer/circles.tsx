@@ -4,7 +4,12 @@ import Image from 'next/image';
 import paths from 'paths';
 
 
-export default function Circles() {
+/**
+ * Renders a component that displays social media icons for GitHub, Medium, and LinkedIn with appropriate links.
+ *
+ * @return {JSX.Element} The rendered component.
+ */
+export default function Circles(): JSX.Element {
     return (
         <div className="my-4 h-14
         flex items-stretch gap-3

@@ -1,7 +1,12 @@
 import Circles from './circles'
 
 
-export default function Footer() {
+/**
+ * Renders the footer component with contact information and copyright details.
+ *
+ * @return {JSX.Element} The JSX element representing the footer component.
+ */
+export default function Footer(): JSX.Element {
     return (
         <footer className="h-[40vh] fade-border dark:fade-border-dark px-[4%] relative pt-10
         flex justify-between items-start
