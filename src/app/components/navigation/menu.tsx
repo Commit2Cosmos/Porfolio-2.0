@@ -5,7 +5,12 @@ import paths from 'paths'
 import { usePathname } from 'next/navigation'
 
 
-export default function Menu() {
+/**
+ * Renders the menu component with a quick link to form, and Home and Projects pages.
+ *
+ * @return {JSX.Element} The JSX element representing the menu component.
+ */
+export default function Menu(): JSX.Element {
 
     const pathname = usePathname()
 

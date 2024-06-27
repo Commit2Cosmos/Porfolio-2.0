@@ -10,7 +10,16 @@ interface SectionTemplateProps {
     title: string;
 }
 
-export default function SectionTemplate({ vid_name, section_path, title }: SectionTemplateProps) {
+/**
+ * Renders a template for a wallpaper-link on the Projects page.
+ *
+ * @param {SectionTemplateProps} props - The props object containing the following properties:
+ *   - vid_name: The name of the mp4 wallpaper.
+ *   - section_path: The local path to the section.
+ *   - title: The name of the section.
+ * @return {JSX.Element} The JSX element representing the section template.
+ */
+export default function SectionTemplate({ vid_name, section_path, title }: SectionTemplateProps): JSX.Element {
 
     useEffect(() => {
         const video = document.getElementById(`${vid_name}`) as HTMLVideoElement;

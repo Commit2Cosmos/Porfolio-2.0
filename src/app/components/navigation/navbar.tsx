@@ -4,7 +4,12 @@ import ThemeSwitch from "./theme_switch"
 import Image from "next/image"
 
 
-export default function Navbar() {
+/**
+ * Renders the navigation bar component, containing the logo, the menu and a darkmode switch button.
+ *
+ * @return {JSX.Element} The JSX element representing the navigation bar.
+ */
+export default function Navbar(): JSX.Element {
     return (
         <nav className="fixed w-full h-[4.5rem] my-6 px-[5%] lg:px-[10%] z-50 pointer-events-none
         flex justify-end">

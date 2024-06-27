@@ -11,7 +11,12 @@ export const metadata: Metadata = {
 };
 []
 
-export default function ProjectsSection() {
+/**
+ * Renders the page with two interactive wallpapers, each serving as a link to pages withdifferent types of projects.
+ *
+ * @return {JSX.Element} The JSX element representing the ProjectsSection component.
+ */
+export default function ProjectsSection(): JSX.Element {
     return (
         <main className="relative w-screen h-screen overflow-hidden">
             <Navbar />
